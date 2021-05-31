@@ -56,4 +56,4 @@ def vote(request, question_id):
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 
 def about(request):
-    return HttpResponse('<h1>About<h1>')
+    return HttpResponseRedirect('<h1>About<h1>')
